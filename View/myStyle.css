@@ -1,0 +1,139 @@
+body {
+     background-color: black;
+     -moz-transform: scale(0.8);
+}
+#wrapper {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     justify-items: center;
+     align-items: center;
+     background: rgb(37, 2, 2);
+     width: 500px;
+     height: 500px;
+     margin: auto;
+     /* next liens make div unselecable ?! hide zeros when marked*/
+     -moz-user-select: -moz-none;
+     -khtml-user-select: none;
+     -webkit-user-select: none;
+     -o-user-select: none;
+     user-select: none;
+     margin-top: 22px;
+     /* make entire wrapper smaller */
+     zoom: 0.8;
+     -moz-transform: scale(0.8);
+     border: 6px solid rgb(110, 109, 109);
+     border-radius: 10px;
+}
+.cell {
+     margin: 10px;
+     background-color: rgb(59, 35, 35);
+     font-size: 30px;
+     width: 100px;
+     height: 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 60px;
+     box-sizing: border-box;
+}
+#newGameContainer { 
+     margin-top: 28px;   
+     text-align: center;     
+}
+#newGameContainer button {
+     margin-left: auto;
+     margin-right: auto;
+     background-color: rgb(41, 172, 15);
+     font-size: 32px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-radius: 10px;  
+     color: white;  
+     text-align: center;
+}
+#newGameContainer button:hover {
+     background-color: rgb(110, 109, 109); 
+}
+/* header style ___________________________________ */
+header{
+     width: 100%;
+     text-align: center;
+     color: rgb(119, 228, 9);
+}
+header h1{
+     font-size: 28px;
+     display: inline-block;
+}
+/* how to play section_____________________________ */
+#how-to-play{
+   position: absolute;
+   top: 36px;
+   left: 60px;
+   font-size: 18px;
+   cursor: pointer;
+}
+#how-to-play:hover{
+     color:#FF7F50;
+}
+#score-container{
+     display: flex;
+     flex-direction: row;
+     text-align: center;
+     justify-content: center;
+     font-size: 24px;
+     gap: 20px;
+}
+#high-score-container{
+   position: absolute;
+   top: 36px;
+   right: 60px;
+   font-size: 18px;
+   display: flex;
+   flex-direction: row;
+   gap: 12px;
+}
+/* info about 2014 / how to play  */
+#info{
+     width: 50%;
+     margin-top: 60px;
+     padding-left: 30px;
+     margin-left: auto;
+     margin-right: auto;
+     color: rgb(214, 214, 214);
+     margin-bottom: 60px;
+}
+#info a{
+     text-decoration: none;
+     color: rgb(66, 209, 245);
+}
+footer{
+     text-align: center;  
+     height:36px;
+     color: white;
+     background-color: rgb(99, 98, 98);
+     margin-top: auto;
+     margin-bottom: auto;
+}
+footer h2{
+  padding-top: 8px;
+  color: white;
+}
+    
+/* phone */
+@media only screen and (max-width: 768px) {
+     body {
+          zoom:0.8
+     }
+     #score-container{
+          font-size: 18px;     
+     }
+     #high-score-container{
+          font-size: 18px;     
+     }
+       #how-to-play{
+          font-size: 18px;  
+     }
+}

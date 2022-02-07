@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="View/reset.css">
+     <link rel="stylesheet" href="View/myStyle.css">
+     <title>Project implementation of 2048</title>
+</head>
+
+<body>
+     <header>
+          <div id="how-to-play"> How to play &#8628;</div>
+          <div id="high-score-container"> 
+               <h3><span style="color:#FFD700">&#9733;</span>High Score:</h3>
+               <h3 id="highScore">0</h3>
+          </div>
+          <h1>Project - implementation of 2048game</h1>     
+          <div id="score-container">
+               <h3>score:</h3>
+               <h3 id="score">0</h3>
+          </div>
+     </header>
+     <div id='wrapper'>
+          <div class="cell" id='00'></div>
+          <div class="cell" id='01'></div>
+          <div class="cell" id='02'></div>
+          <div class="cell" id='03'></div>
+
+          <div class="cell" id='10'></div>
+          <div class="cell" id='11'></div>
+          <div class="cell" id='12'></div>
+          <div class="cell" id='13'></div>
+
+          <div class="cell" id='20'></div>
+          <div class="cell" id='21'></div>
+          <div class="cell" id='22'></div>
+          <div class="cell" id='23'></div>
+
+          <div class="cell" id='30'></div>
+          <div class="cell" id='31'></div>
+          <div class="cell" id='32'></div>
+          <div class="cell" id='33'></div>
+     </div>
+
+     <div id='newGameContainer'>
+          <button id='newGameB'>New game</button>
+     </div>
+
+     <div id="info">
+          <h2 style="color:#FF7F50">HOW TO PLAY: </h2>
+          <h3>
+               Use your arrow keys <span style="color:#FF7F50">(&#8678;,&#8679;,&#8681;,&#8680;)</span> to move the tiles. Tiles with the same number merge into one when they
+               touch. Add them up to reach 2048!
+               Start playing.
+          </h3>
+          <br>
+          <br>
+          <h3>Original version of 2048 &#8680; <a href="https://play2048.co/">https://play2048.co/</a></h3>
+     </div>
+     <footer>
+          <h2>	Created by Nikola based on 2048 by Gabriele Cirulli.</h2>
+     </footer>
+
+     <script src="Controller/logic.js"></script>
+</body>
+
+</html>
